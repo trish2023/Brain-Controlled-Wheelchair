@@ -34,6 +34,7 @@ This repo includes everything from data collection and model training to real-ti
 │   └── requirements.txt                  # Required Python libraries
 
 
+
 🧠 Control Logic
 | Mental State  | Blink Type   | Action           |
 | ------------- | ------------ | ---------------- |
