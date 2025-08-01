@@ -9,7 +9,7 @@ Using EEG data from the Neiry BCI headset and blink patterns detected via OpenCV
 This repo includes everything from data collection and model training to real-time inference, logging, and control logic — all geared toward accessible, low-cost, and explainable assistive technology.
 
 📁 Project Structure
-
+'''plain text
 ├── dataset/
 │   └── brain_data_log.csv                # Raw EEG dataset for training
 │
@@ -32,7 +32,7 @@ This repo includes everything from data collection and model training to real-ti
 │   ├── emo.py                            # (Optional) Emotion-related utilities
 │   ├── pyneurosdk2-1.0.15.tar.gz         # Neiry BCI SDK package
 │   └── requirements.txt                  # Required Python libraries
-
+'''
 
 
 🧠 Control Logic
