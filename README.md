@@ -8,31 +8,31 @@ Using EEG data from the Neiry BCI headset and blink patterns detected via OpenCV
 
 This repo includes everything from data collection and model training to real-time inference, logging, and control logic — all geared toward accessible, low-cost, and explainable assistive technology.
 
-📁 Project Structure
-'''plain text
+BCI/
+│
 ├── dataset/
-│   └── brain_data_log.csv                # Raw EEG dataset for training
+│   └── brain_data_log.csv                   # Raw EEG dataset for model training
 │
 ├── real_time_system/
-│   ├── __pycache__/                      # Python bytecode cache
-│   ├── data_logger/                      # Module to log EEG signals and predictions
-│   ├── logs/                             # Runtime log files
-│   ├── blink_detector.py                 # Blink detection using OpenCV and dlib
-│   ├── brain_data_log.csv                # EEG log for live testing
-│   ├── cnn_lstm_model.py                 # CNN-LSTM architecture (optional)
-│   ├── cnn_lstm_model.cpython-313.pyc    # Compiled version
-│   ├── control_logic.py                  # Fusion of EEG and blink inputs into actions
-│   ├── eeg_inference.py                  # Real-time EEG classification logic
-│   ├── eeg_logger.py                     # Logger for live EEG stream
-│   ├── model_weights.pth                 # Saved model weights
-│   ├── predicted_state_log.txt           # Output log of classified mental states
-│   ├── shape_predictor_68_face_landmark.dat  # Landmark model for face/eye detection
-│   ├── shape_predictor_68_face_landmark.zip  # Compressed version (backup)
-│   ├── train_model.py                    # Model training script
-│   ├── emo.py                            # (Optional) Emotion-related utilities
-│   ├── pyneurosdk2-1.0.15.tar.gz         # Neiry BCI SDK package
-│   └── requirements.txt                  # Required Python libraries
-'''
+│   ├── __pycache__/                         # Python bytecode cache
+│   ├── data_logger/                         # EEG and system state logger module
+│   ├── logs/                                # Stores real-time logs
+│   ├── blink_detector.py                    # Eye blink detection using OpenCV + dlib
+│   ├── brain_data_log.csv                   # EEG log for real-time inference
+│   ├── cnn_lstm_model.py                    # CNN-LSTM model for EEG classification
+│   ├── cnn_lstm_model.cpython-313.pyc       # Compiled Python model file
+│   ├── control_logic.py                     # Combines EEG + blink to generate commands
+│   ├── eeg_inference.py                     # Loads model & performs real-time EEG inference
+│   ├── eeg_logger.py                        # Reads EEG data and logs it
+│   ├── model_weights.pth                    # Pre-trained model weights
+│   ├── predicted_state_log.txt              # Log of model's predicted mental states
+│   ├── shape_predictor_68_face_landmark.dat # Facial landmark model for blink detection
+│   ├── shape_predictor_68_face_landmark.zip # Zipped version of facial landmark model
+│   ├── train_model.py                       # Training script for the EEG classifier
+│   ├── emo.py                               # (Optional) Emotion detection-related logic
+│   ├── pyneurosdk2-1.0.15.tar.gz            # Neiry EEG headset SDK archive
+│   └── requirements.txt                     # List of Python dependencies
+
 
 
 🧠 Control Logic
