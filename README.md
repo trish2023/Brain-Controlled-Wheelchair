@@ -10,6 +10,8 @@ This project enables individuals with severe motor impairments to control a whee
 - **Eye blink pattern detection** using OpenCV and dlib facial landmarks
 - **WebSocket integration** for real-time communication with Unity-based wheelchair simulation
 
+<img width="1705" height="532" alt="image" src="https://github.com/user-attachments/assets/e50738ed-fd33-4556-bd3c-27ed3332b800" />
+
 ## Features
 
 - Real-time EEG signal processing from Neiry BCI headset
@@ -169,14 +171,5 @@ spectral_delta, spectral_theta, spectral_alpha, spectral_beta, spectral_gamma,
 attention_state
 ```
 
-## Troubleshooting
-
-- **Headset not found**: Ensure Bluetooth is enabled and headset is in pairing mode
-- **Poor signal quality**: Check electrode placement and resistance values (<2MΩ)
-- **Blinks not detected**: Ensure adequate lighting and face is visible to camera
 - **WebSocket connection failed**: Verify ngrok URL and network connectivity
-
-## License
-
-This project is developed for assistive technology research and educational purposes.
 
